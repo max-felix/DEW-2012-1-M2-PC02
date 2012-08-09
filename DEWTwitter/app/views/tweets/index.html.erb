@@ -1,0 +1,51 @@
+
+<h1 align="center">Aplicacion Twitter</h1>
+
+
+<%= form_for(@tweet, :url => "user") do |f| %>
+<table bgcolor="#CEE3F6" align="center" WIDTH="270">
+  <tr>
+  <td align="center" class="field"> <%= f.label :Usuario %><td/>
+  <tr/>
+  <tr>
+  <td align="center"><%= f.text_field :user %><td/>
+  <tr/>
+  <tr>
+  <td align="center" class="actions"> <%= f.submit "Buscar" %><td/>
+  </tr>
+<table/>
+<% end %>
+
+<%= form_for(@tweet, :url => "read_text") do |f| %>
+<table bgcolor="#CEE3F6" align="center" WIDTH="270">
+  <tr>
+  <td align="center" class="field"> <%= f.label :status %><td/>
+	<tr/>
+	<tr>
+    <td align="center"><%= f.text_field :status %> </td>
+	<tr/>
+	<tr>
+  <td align="center" class="actions"> <%= f.submit "Buscar Status" %></td>
+  <tr/>
+<table/>
+<% end %>
+
+<%= form_for(@tweet, :url => "update") do |f| %>
+<table bgcolor="#CEE3F6" align="center" WIDTH="270">
+<tr>
+  <td align="center" class="field"> <%= f.label :Mensaje %><td/>
+<tr/>
+<tr>
+    <td align="center"><%= f.text_field :message %></ts>
+<tr/> 
+<tr>
+  <td><div align="center" class="actions"> <%= f.submit "Enviar Mensaje" %> </td>
+<tr/>
+<table/>
+<% end %>
+
+
+<br />
+
+
+
